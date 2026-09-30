@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Video Summary</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        pre {
+            background-color: #eee;
+            padding: 15px;
+            overflow-x: auto;
+        }
+
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+
+        a {
+            color: #2673c9;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      {{ summary | safe }}
+      <p>
+        <a href="/">Summarize another video</a>
+      </p>
+    </div>
+  </body>
+</html>
